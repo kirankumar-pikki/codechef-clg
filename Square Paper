@@ -1,0 +1,82 @@
+Square Paper
+You have a rectangular piece of paper of dimensions 
+A
+⋅
+B
+A⋅B. You are wondering what is the largest square piece of paper you can cut off from this rectangular piece.
+
+Find the area of this maximum square paper.
+
+You are only allowed to cut along parallel to the edges of the paper, so either horizontal or vertical cuts.
+
+Input Format
+The only line of input contains 
+2
+2 integers - 
+A
+A and 
+B
+B.
+Output Format
+Output a single integer - the area of the maximum square you can cut off
+
+Constraints
+1
+≤
+A
+,
+B
+≤
+5
+1≤A,B≤5
+Sample 1:
+Input
+Output
+2 3
+4
+Explanation:
+You can cut off a 
+2
+⋅
+2
+2⋅2 square from the rectangle.
+
+Sample 2:
+Input
+Output
+4 3
+9
+Did you like the problem statement?
+43 users found this helpful
+More Info
+Time limit1 secs
+Memory limit1.5 GB
+Source Limit50000 Bytes
+
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+#################################################################
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+	Scanner sc=new Scanner(System.in);
+	int a=sc.nextInt();
+	int b =sc.nextInt();
+	int side=0;
+	if(a>b){
+	    side=b;
+	}
+	else if(b>a){
+	    side=a;
+	}
+	else if(a==b){
+	    side=a;
+	}
+	
+	System.out.println(side*side);
+	}
+}
