@@ -1,0 +1,104 @@
+Adding Dice
+You have 
+2
+2 dice with you, and you really like the number 
+9
+9. You want the sum of both numbers on the die to add to 
+9
+9.
+
+You rolled the first dice, and it showed a number 
+X
+X.
+
+Given the roll of the first dice, is it still possible for both die to add to 
+9
+9? Print 
+Yes
+Yes if it is possible or 
+No
+No otherwise.
+
+Input Format
+The first and only line of each test case contains a single integer 
+X
+X.
+Output Format
+Output 
+Yes
+Yes if it is possible for both die to add to 
+9
+9 and 
+No
+No otherwise.
+
+Constraints
+1
+≤
+X
+≤
+6
+1≤X≤6
+Sample 1:
+Input
+Output
+3
+Yes
+Explanation:
+The second dice could show a 
+6
+6, and then both would add to a 
+9
+9.
+
+Sample 2:
+Input
+Output
+1
+No
+
+
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+##################################################
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+ 		Scanner sc=new Scanner(System.in);
+ 		
+// 		int put=9;
+// 		int link=0;
+// 		int num=sc.nextInt();
+// 		for(int i=1;i<=6;i++){
+// 		    if(num+i==put){
+// 		        link=1;
+// 		        break;
+// 		    }
+// 		    else{
+// 		        link=0;
+// 		    }
+		    
+// 		}
+// 		if(link==1){
+// 		    System.out.println("Yes");
+// 		}
+// 		else{
+// 		    System.out.println("No");
+// 		}
+
+// 	}
+// }
+        int num=sc.nextInt();
+        if(num<=2){
+            System.out.println("No");
+            
+        }
+        else{
+            System.out.println("Yes");
+        }
+	}
+}
